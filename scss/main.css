@@ -16,4 +16,13 @@ a {
   background-size: cover;
   height: 90vh;
   width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
 }
+
+.hero-splash {
+  font-size: 5vw;
+  color: #fafafa;
+}
+

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      href="./assets/FA/css/all.css"
     />
     <link rel="stylesheet" href="stylesheets/main.css" />
     <title>Ian Mason</title>
@@ -20,29 +20,74 @@
         <a href="" class="navigation__about">About</a>
         <a href="" class="navigation__contact">Contact</a>
         <button type="button" onclick="">Resume</button>
-        <a href=""><i class="fa fa-github"></i>
-        <a href=""><i class="fa fa-linkedin"></i>
-        <a href=""><i class="fa fa-envelope"></i>
-        
+        <a href=""><i class="fab fa-github-square"></i>
+        <a href=""><i class="fab fa-linkedin"></i>
+        <a href=""><i class="fas fa-envelope"></i>
       </nav>
+
     </header>
 
     <main>
       <!-------------------------------- Hero Section -------------------------------------------->
       <section class="hero">
-        <h1 class="">Hello. I'm Ian. A Web Developer</h1>
-        <img class="" src="./images/hero.jpg" alt="Mountain Range" />
+        <img class="" src="./assets/hero.jpg" alt="Mountain Range" />
+        <h1 class="">Hello. I'm Ian. A Web Developer.</h1>
+        <div class="button">
+          <button class="button__projects" type="button" onclick="">My Projects</button>
+        </div>
       </section>
+
+
 
       <!-------------------------------- Projects Section -------------------------------------------->
       <section class="projects"></section>
+        <h2>Projects</h2>
+
+          <div class="carousel-wrapper">
+
+          </div>
+
+
 
       <!-------------------------------- About Section -------------------------------------------->
       <section class="about"></section>
+        <h2>About</h2>
+        <h3>Profile</h3>
+        <h4>Languages</h4>
+        <div class="languages-wrapper">
+          <i class="fab fa-html5"></i>
+          <i class="fab fa-css3-alt"></i>
+          <i class="fab fa-js"></i>
+
+        </div>
+        <div class="button">
+          <button class="button__contact" type="button" onclick="">Get in Touch</button>
+        </div>
+
+
+
 
       <!-------------------------------- Contact Section -------------------------------------------->
       <section class="contact"></section>
+        <h2>Contact</h2>
+        <form action="" class="form">
+          <input type="text" name="name" class="form__input" placeholder="Name" />
+          <input type="email" class="form__input" placeholder="Email" />
+          <textarea name="the-textarea" id="the-textarea" maxlength="200" placeholder="Message"autofocus></textarea>
+          <button class="button__form" type="button" onclick="">Send Message</button>
+        </form>
+
+        <h2>I'd love to hear from you.</h2>
+    <!-- Character Counter -->
+    <div class="counter">
+      <span class="counter__current">0</span>
+      <span class="counter__maximum">/ 200</span>
+    </div>
+  </div>
+
     </main>
+
+
 
     <!-- Copyright -->
     <footer>

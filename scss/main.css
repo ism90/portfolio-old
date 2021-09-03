@@ -22,7 +22,16 @@ a {
 }
 
 .hero-splash {
-  font-size: 5vw;
+  font-size: 7em;
   color: #fafafa;
+  margin-left: 15vh;
+  margin-top: 28vh;
+}
+.hero-splash__pink {
+  color: #fd4370;
 }
 
+.button__projects {
+  margin-left: 15vh;
+  margin-top: 5vh;
+}

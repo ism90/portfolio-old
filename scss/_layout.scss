@@ -1,5 +1,7 @@
 // Layout: contains all the CSS that handles the layout, such as the container and any grid systems.
 
+@use "./base" as *;
+
 // Nav Bar Layout
 .navigation {
 }
@@ -17,10 +19,17 @@
 }
 
 .hero-splash {
-  font-size: 5vw;
-  color: #fafafa;
+  font-size: 7em;
+  color: $color-white;
+  margin-left: 15vh;
+  margin-top: 28vh;
 
   &__pink {
-    color: $color-button;
+    color: $color-secondary;
   }
+}
+
+.button__projects {
+  margin-left: 15vh;
+  margin-top: 5vh;
 }

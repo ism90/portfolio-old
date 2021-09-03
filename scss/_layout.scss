@@ -4,49 +4,47 @@
 
 // ------------------------------------- Mobile First ------------------------------------
 @media screen and (min-width: $breakpoint-mobile) {
-}
+  // Nav Bar Layout
+  .navigation-desktop {
+    display: none;
+  }
 
-// Nav Bar Layout
-.navigation-desktop {
-  display: none;
-}
-
-.navigation-mobile {
-  display: flex;
-  justify-content: center;
-  height: 10vh;
-  background-color: $color-primary;
-  color: $color-white;
-}
-
-// Hero Splash Layout
-.hero {
-  background-image: url(../assets/hero.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: auto;
-  height: 90vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-  background-position: center;
-
-  .hero-splash {
-    margin-top: 5vh;
-    margin-left: 10%;
-    text-align: left;
+  .navigation-mobile {
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+    background-color: $color-primary;
     color: $color-white;
-    font-size: 4em;
+  }
 
-    &__pink {
-      color: $color-secondary;
+  // Hero Splash Layout
+  .hero {
+    background-image: url(../assets/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    background-position: center;
+
+    .hero-splash {
+      margin-top: 5vh;
+      margin-left: 10%;
+      text-align: left;
+      color: $color-white;
+      font-size: 4em;
+
+      &__pink {
+        color: $color-secondary;
+      }
+    }
+    .button__projects {
+      margin-top: 10%;
     }
   }
-  .button__projects {
-    margin-top: 10%;
-  }
 }
-
 // ------------------------------------- Tablet ------------------------------------
 @media screen and (min-width: $breakpoint-tablet) {
 }
@@ -59,11 +57,11 @@
   }
 
   .navigation-desktop {
-    display: unset;
+    display: flex;
   }
 
   .hero-splash {
-    font-size: 7em;
+    font-size: 8em;
 
     margin-left: 15vh;
     margin-top: 28vh;

@@ -2,8 +2,21 @@
 
 @use "./base" as *;
 
+// ------------------------------------- Mobile First ------------------------------------
+@media screen and (min-width: $breakpoint-mobile) {
+}
+
 // Nav Bar Layout
-.navigation {
+.navigation-desktop {
+  display: none;
+}
+
+.navigation-mobile {
+  display: flex;
+  justify-content: center;
+  height: 10vh;
+  background-color: $color-primary;
+  color: $color-white;
 }
 
 // Hero Splash Layout
@@ -11,25 +24,52 @@
   background-image: url(../assets/hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 90vh;
   width: auto;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: left;
-}
+  background-position: center;
 
-.hero-splash {
-  font-size: 7em;
-  color: $color-white;
-  margin-left: 15vh;
-  margin-top: 28vh;
+  .hero-splash {
+    margin-top: 5vh;
+    margin-left: 10%;
+    text-align: left;
+    color: $color-white;
+    font-size: 4em;
 
-  &__pink {
-    color: $color-secondary;
+    &__pink {
+      color: $color-secondary;
+    }
+  }
+  .button__projects {
+    margin-top: 10%;
   }
 }
 
-.button__projects {
-  margin-left: 15vh;
-  margin-top: 5vh;
+// ------------------------------------- Tablet ------------------------------------
+@media screen and (min-width: $breakpoint-tablet) {
+}
+
+// ------------------------------------- Desktop ------------------------------------
+
+@media screen and (min-width: $breakpoint-desktop) {
+  .navigation-mobile {
+    display: none;
+  }
+
+  .navigation-desktop {
+    display: unset;
+  }
+
+  .hero-splash {
+    font-size: 7em;
+
+    margin-left: 15vh;
+    margin-top: 28vh;
+
+    &__pink {
+      color: $color-secondary;
+    }
+  }
 }

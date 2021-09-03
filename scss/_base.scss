@@ -12,6 +12,12 @@ $color-primary-light: #d1d5e8;
 $color-secondary: #fd4370;
 $color-white: #fafafa;
 
+// Media Queries
+
+$breakpoint-mobile: 425px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+
 //Styles
 
 * {

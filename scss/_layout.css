@@ -53,7 +53,7 @@ a {
   }
 
   .navigation-desktop {
-    display: block;
+    display: unset;
   }
 
   .hero-splash {

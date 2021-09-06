@@ -47,6 +47,8 @@
 }
 // ------------------------------------- Tablet ------------------------------------
 @media screen and (min-width: $breakpoint-tablet) {
+  .hero-splash {
+  }
 }
 
 // ------------------------------------- Desktop ------------------------------------
@@ -65,9 +67,5 @@
 
     margin-left: 15vh;
     margin-top: 28vh;
-
-    &__pink {
-      color: $color-secondary;
-    }
   }
 }

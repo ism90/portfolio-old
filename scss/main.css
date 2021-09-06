@@ -50,7 +50,7 @@ a {
 }
 @media screen and (min-width: 1024px) {
   .navigation-mobile {
-    visibility: hidden;
+    display: none;
   }
 
   .navigation-desktop {
@@ -61,8 +61,5 @@ a {
     font-size: 8em;
     margin-left: 15vh;
     margin-top: 28vh;
-  }
-  .hero-splash__pink {
-    color: #fd4370;
   }
 }

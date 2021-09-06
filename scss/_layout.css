@@ -10,6 +10,10 @@ a {
   text-decoration: none;
 }
 
+.gradient {
+  background-image: linear-gradient(#ff8a00, #e52e71);
+}
+
 @media screen and (min-width: 425px) {
   .navigation-desktop {
     display: none;
@@ -21,6 +25,8 @@ a {
     height: 10vh;
     background-color: #131628;
     color: #fafafa;
+    position: sticky;
+    top: 0;
   }
 
   .hero {
@@ -45,7 +51,20 @@ a {
     color: #fd4370;
   }
   .hero .button__projects {
-    margin-top: 10%;
+    justify-content: center;
+    margin: 5vh auto;
+  }
+
+  .projects {
+    height: 100vh;
+  }
+
+  .about {
+    height: 100vh;
+  }
+
+  .contact {
+    height: 100vh;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -55,6 +74,7 @@ a {
 
   .navigation-desktop {
     display: flex;
+    height: 10vh;
   }
 
   .hero-splash {

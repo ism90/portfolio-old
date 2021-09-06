@@ -15,6 +15,12 @@
     height: 10vh;
     background-color: $color-primary;
     color: $color-white;
+    position: sticky;
+    top: 0;
+  }
+
+  .navigation-mobile__logo {
+    margin: auto;
   }
 
   // Hero Splash Layout
@@ -41,8 +47,22 @@
       }
     }
     .button__projects {
-      margin-top: 10%;
+      justify-content: center;
+      margin: 5vh auto;
     }
+  }
+
+  // Projects Layout
+  .projects {
+    height: 100vh;
+  }
+
+  .about {
+    height: 100vh;
+  }
+
+  .contact {
+    height: 100vh;
   }
 }
 // ------------------------------------- Tablet ------------------------------------
@@ -60,6 +80,7 @@
 
   .navigation-desktop {
     display: flex;
+    height: 10vh;
   }
 
   .hero-splash {

@@ -20,11 +20,7 @@ body {
   }
 
   .navigation-mobile {
-    display: flex;
-    justify-content: center;
     height: 10vh;
-    background-color: #131628;
-    color: #fafafa;
     position: sticky;
     top: 0;
   }
@@ -45,8 +41,7 @@ body {
     background-position: center;
   }
   .hero .hero-splash {
-    margin-top: 5vh;
-    margin-left: 10%;
+    margin: 5vh;
     text-align: left;
     color: #fafafa;
     font-size: 4em;
@@ -55,8 +50,8 @@ body {
     color: #fd4370;
   }
   .hero .button__projects {
-    justify-content: center;
-    margin: 5vh auto;
+    margin: 5vh 5vh;
+    font-size: 2rem;
   }
 
   .projects {
@@ -86,4 +81,25 @@ body {
     margin-left: 15vh;
     margin-top: 28vh;
   }
+}
+.navigation-mobile {
+  display: flex;
+  justify-content: center;
+  background-color: #131628;
+  color: #fafafa;
+}
+
+.button {
+  display: inline-block;
+  border: none;
+  padding: 1rem 2rem;
+  margin: 0;
+  text-decoration: none;
+  background-color: #fd4370;
+  color: #fafafa;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }

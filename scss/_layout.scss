@@ -10,11 +10,7 @@
   }
 
   .navigation-mobile {
-    display: flex;
-    justify-content: center;
     height: 10vh;
-    background-color: $color-primary;
-    color: $color-white;
     position: sticky;
     top: 0;
   }
@@ -36,8 +32,7 @@
     background-position: center;
 
     .hero-splash {
-      margin-top: 5vh;
-      margin-left: 10%;
+      margin: 5vh;
       text-align: left;
       color: $color-white;
       font-size: 4em;
@@ -47,8 +42,8 @@
       }
     }
     .button__projects {
-      justify-content: center;
-      margin: 5vh auto;
+      margin: 5vh 5vh;
+      font-size: 2rem;
     }
   }
 

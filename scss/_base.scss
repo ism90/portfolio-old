@@ -47,3 +47,8 @@ body {
 //   text-underline-offset: 0.3em;
 // }
 
+::placeholder {
+  color: $color-primary-light;
+  opacity: 0.5;
+}
+

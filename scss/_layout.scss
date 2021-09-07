@@ -24,15 +24,14 @@
     background-image: url(../assets/hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    width: auto;
-    height: 90vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: left;
     background-position: center;
 
     .hero-splash {
-      margin: 5vh;
+      margin: 10%;
       text-align: left;
       color: $color-white;
       font-size: 4em;
@@ -42,30 +41,61 @@
       }
     }
     .button__projects {
-      margin: 5vh 5vh;
+      margin: 10%;
       font-size: 2rem;
     }
   }
 
   // Projects Layout
   .projects {
-    height: 90vh;
-  }
-
-  .projects__heading {
+    height: 100vh;
     display: flex;
-    justify-content: center;
-    margin-top: 15vh;
+    flex-direction: column;
+    align-items: center;
+
+    .projects__heading {
+      margin-top: 15vh;
+    }
+
+    .projects__heading__line {
+      width: 100px;
+      height: 4px;
+      background-color: $color-secondary;
+    }
   }
 
   // About Layout
   .about {
-    height: 90vh;
+    height: 100vh;
+
+
+
+    .about__heading {
+      margin-top: 15vh;
+    }
+
+    .about__heading__line {
+      width: 100px;
+      height: 4px;
+      background-color: $color-secondary;
+    }
+
   }
 
   // Contact Layout
   .contact {
-    height: 90vh;
+    height: 100vh;
+
+
+    .contact__heading {
+      margin-top: 15vh;
+    }
+
+    .about__heading__line {
+      width: 100px;
+      height: 4px;
+      background-color: $color-secondary;
+    }
   }
 }
 

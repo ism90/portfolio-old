@@ -34,3 +34,21 @@ a {
 body {
   background: linear-gradient(#292b3e, #131628);
 }
+
+.section-heading {
+  color: $color-white;
+  font-size: 2rem;
+  text-decoration: underline 0.15em $color-secondary;
+  text-underline-offset: 0.3em;
+}
+
+// .heading-small {
+//   text-decoration: underline 0.15em $color-secondary;
+//   text-underline-offset: 0.3em;
+// }
+
+::placeholder {
+  color: $color-primary-light;
+  opacity: 0.5;
+}
+

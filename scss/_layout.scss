@@ -10,11 +10,7 @@
   }
 
   .navigation-mobile {
-    display: flex;
-    justify-content: center;
     height: 10vh;
-    background-color: $color-primary;
-    color: $color-white;
     position: sticky;
     top: 0;
   }
@@ -23,12 +19,11 @@
     margin: auto;
   }
 
-  // Hero Splash Layout
+  // ------------------------------------------------------------- Hero Layout ------------------------------
   .hero {
     background-image: url(../assets/hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    width: auto;
     height: 90vh;
     display: flex;
     flex-direction: column;
@@ -36,8 +31,7 @@
     background-position: center;
 
     .hero-splash {
-      margin-top: 5vh;
-      margin-left: 10%;
+      margin: 10%;
       text-align: left;
       color: $color-white;
       font-size: 4em;
@@ -47,23 +41,146 @@
       }
     }
     .button__projects {
-      justify-content: center;
-      margin: 5vh auto;
+      margin: 10%;
+      font-size: 2rem;
     }
   }
 
-  // Projects Layout
+  // --------------------------------------- Projects Layout --------------------------------------------------
   .projects {
-    height: 100vh;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10%;
+
+    .projects__heading {
+      margin-top: 15%;
+    }
+  }
+}
+
+// -------------------------------------------- About Layout ---------------------------------------------------------------
+.about {
+  height: 90vh;
+  margin: 10%;
+  display: flex;
+  flex-direction: column;
+
+  .about__heading {
+    margin-top: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
-  .about {
-    height: 100vh;
+  .about__heading-small {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: $color-white;
   }
 
-  .contact {
-    height: 100vh;
+  .about__profile {
+    color: $color-primary-light;
+    font-size: 0.8rem;
+    margin-top: 5%;
+    margin-bottom: 5%;
   }
+
+  .fab {
+    color: $color-primary-light;
+    margin-top: 5%;
+    padding-right: 5%;
+  }
+  .profile-picture img {
+    display: flex;
+    align-items: center;
+    width: 85%;
+    height: 85%;
+    margin: auto;
+    margin-top: 3vh;
+  }
+
+  .button__contact {
+    display: none;
+  }
+}
+
+// --------------------------------------------- Contact Layout ----------------------------------------------------------
+.contact {
+  height: 90vh;
+  margin: 15%;
+  display: flex;
+  flex-direction: column;
+
+  .contact__heading {
+    margin-top: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5%;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form__input {
+    margin-top: 5%;
+    width: 300px;
+    height: 50px;
+    background-color: #292b3e;
+    border-radius: 5px;
+    padding: 5px;
+  }
+
+
+
+   .form__textarea {
+    margin-top: 5%;
+    width: 300px;
+    height: 150px;
+    background-color: #292b3e;
+    border-radius: 5px;
+    padding: 5px;
+  }
+
+  .message-splash {
+    display: none;
+  }
+
+  .counter {
+    color: $color-white;
+    margin-top: 2%;
+  }
+  .button__form {
+    margin-top: 15%;
+  }
+
+  .social-icons {
+    display: inline-flex;
+    justify-content: space-between;
+    margin: 10%;
+    padding: 10%;
+  }
+
+  .fab {
+    color: $color-primary-light;
+  }
+
+  .fas {
+    color: $color-primary-light;
+  }
+}
+
+.copyright {
+  color: $color-primary-light;
+  opacity: 50%;
+  margin: auto;
+  text-align: center;
 }
 // ------------------------------------- Tablet ------------------------------------
 @media screen and (min-width: $breakpoint-tablet) {

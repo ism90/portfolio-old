@@ -19,7 +19,7 @@
     margin: auto;
   }
 
-  // Hero Splash Layout
+  // ------------------------------------------------------------- Hero Layout ------------------------------
   .hero {
     background-image: url(../assets/hero.jpg);
     background-repeat: no-repeat;
@@ -46,56 +46,77 @@
     }
   }
 
-  // Projects Layout
+  // --------------------------------------- Projects Layout --------------------------------------------------
   .projects {
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 10%;
 
     .projects__heading {
       margin-top: 15vh;
     }
+  }
+}
 
-    .projects__heading__line {
-      width: 100px;
-      height: 4px;
-      background-color: $color-secondary;
-    }
+// -------------------------------------------- About Layout ---------------------------------------------------------------
+.about {
+  height: 100vh;
+  margin: 10%;
+  display: flex;
+  flex-direction: column;
+
+  .about__heading {
+    margin-top: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
-  // About Layout
-  .about {
-    height: 100vh;
+  .about__heading-small {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: $color-white;
+  }
 
-
-
-    .about__heading {
-      margin-top: 15vh;
-    }
-
-    .about__heading__line {
-      width: 100px;
-      height: 4px;
-      background-color: $color-secondary;
-    }
+  .about__profile {
+    color: $color-primary-light;
+    font-size: .8rem;
+    margin-top: 5%;
+    margin-bottom: 5%;
 
   }
 
-  // Contact Layout
-  .contact {
-    height: 100vh;
 
+  .fab {
+    color: $color-primary-light;
+    margin-top: 5%;
+    padding-right: 5%;
 
-    .contact__heading {
-      margin-top: 15vh;
-    }
+  }
+  .profile-picture img {
+    display: flex;
+    align-items: center;
+    width: 85%;
+    height: 85%;
+    margin: auto;
+    margin-top: 3vh;
+  }
 
-    .about__heading__line {
-      width: 100px;
-      height: 4px;
-      background-color: $color-secondary;
-    }
+  .button__contact {
+    display: none;
+  }
+}
+
+// --------------------------------------------- Contact Layout ----------------------------------------------------------
+.contact {
+  height: 100vh;
+  margin: 10%;
+
+  .contact__heading {
+    margin-top: 15vh;
   }
 }
 

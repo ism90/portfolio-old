@@ -38,5 +38,11 @@ body {
 .section-heading {
   color: $color-white;
   font-size: 2rem;
-
+  text-decoration: underline 0.15em $color-secondary;
+  text-underline-offset: 0.3em;
 }
+
+// .heading-small {
+//   text-decoration: underline 0.15em $color-secondary;
+//   text-underline-offset: 0.3em;
+// }

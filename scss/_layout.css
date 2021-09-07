@@ -10,9 +10,8 @@ a {
   text-decoration: none;
 }
 
-
-body {
-  background: linear-gradient(#292b3e, #131628);
+.gradient {
+  background-image: linear-gradient(#ff8a00, #e52e71);
 }
 
 @media screen and (min-width: 425px) {
@@ -28,10 +27,6 @@ body {
     color: #fafafa;
     position: sticky;
     top: 0;
-  }
-
-  .navigation-mobile__logo {
-    margin: auto;
   }
 
   .hero {

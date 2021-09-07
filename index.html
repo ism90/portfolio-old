@@ -11,32 +11,41 @@
   <body>
     <!-- Header & Nav Bar -->
     <header class="header">
-      <nav class="navigation">
-        <a href="" class="navigation__logo">Ian Mason</a>
-        <a href="" class="navigation__projects">Projects</a>
-        <a href="" class="navigation__about">About</a>
-        <a href="" class="navigation__contact">Contact</a>
+    </header>
+      <!-- On Mobile -->
+
+      <nav class="navigation-mobile">
+        <a href="" class="navigation-mobile__logo">Ian Mason</a>
+      </nav>
+
+      <!-- On Desktop -->
+
+      <nav class="navigation-desktop">
+        <a href="" class="navigation-desktop__logo">Ian Mason</a>
+        <a href="" class="navigation-desktop__projects">Projects</a>
+        <a href="" class="navigation-desktop__about">About</a>
+        <a href="" class="navigation-desktop__contact">Contact</a>
         <button type="button" onclick="">Resume</button>
         <a href=""><i class="fab fa-github-square"></i></a>
         <a href=""><i class="fab fa-linkedin"></i></a>
         <a href=""><i class="fas fa-envelope"></i></a>
       </nav>
 
-    </header>
+
 
     <main>
       <!-------------------------------- Hero Section -------------------------------------------->
       <section class="hero">
 
-        <h1 class="">Hello. I'm Ian. A Web Developer.</h1>
-        <div class="button">
-          <button class="button__projects" type="button" onclick="">My Projects</button>
-        </div>
+        <h1 class="hero-splash">Hello. I'm <span class="hero-splash__pink">Ian</span>.<br> A Web Developer.</h1>
+        <button class="button__projects" type="button" onclick="">My Projects</button>
+
       </section>
 
 
 
       <!-------------------------------- Projects Section -------------------------------------------->
+      <div gradient>
       <section class="projects"></section>
         <h2>Projects</h2>
 
@@ -62,7 +71,9 @@
           <button class="button__contact" type="button" onclick="">Get in Touch</button>
         </div>
 
-
+        <div class="profile-picture">
+          <img src="./assets/profile.png" alt="A picture of me">
+        </div>
 
 
 
@@ -81,10 +92,10 @@
     <!-- Character Counter -->
     <div class="counter">
       <span class="counter__current">0</span>
-      <span class="counter__maximum">/ 200</span>
+      <span class="counter__maximum">/200</span>
     </div>
-  </div>
-
+  
+</div>
     </main>
 
 
@@ -93,6 +104,7 @@
     <footer>
       <p class="copyright">Ian Mason &copy; <span id="year"></span></p>
     </footer>
+  </div>
     <script src="index.js"></script>
   </body>
 </html>

@@ -85,25 +85,30 @@
         <form action="" class="form">
           <input type="text" name="name" class="form__input" placeholder="Name" />
           <input type="email" class="form__input" placeholder="Email" />
-          <textarea name="the-textarea" id="the-textarea" maxlength="200" placeholder="Message"autofocus></textarea>
+          <textarea name="textarea" class="form__textarea" maxlength="200" placeholder="Message"autofocus></textarea>
+          <!-- Character Counter -->
+          <div class="counter">
+            <span class="counter__current">0</span>
+            <span class="counter__maximum">/200</span>
+            </div>
           <button class="button button__form" type="button" onclick="">Send Message</button>
         </form>
 
-        <h2>I'd love to hear from you.</h2>
-    <!-- Character Counter -->
-    <div class="counter">
-      <span class="counter__current">0</span>
-      <span class="counter__maximum">/200</span>
-    </div>
-  
+        <h2 class=message-splash>I'd love to hear from you.</h2>
+
+        <div class="social-icons">
+          <a href=""><i class="fab fa-github-square fa-3x"></i></a>
+          <a href=""><i class="fab fa-linkedin fa-3x"></i></a>
+          <a href=""><i class="fas fa-envelope fa-3x"></i></a>
+        </div>
   </section>
     </main>
 
 
 
     <!-- Copyright -->
-    <footer>
-      <p class="copyright">Ian Mason &copy; <span id="year"></span></p>
+    <footer class="footer">
+      <p class="copyright"> &copy; <span id="year"></span> Ian Mason</span></p>
     </footer>
   </div>
     <script src="index.js"></script>

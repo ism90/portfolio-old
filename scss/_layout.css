@@ -150,16 +150,8 @@ body {
 .contact .button__form {
   margin-top: 15%;
 }
-.contact .social-icons {
-  display: inline-flex;
-  justify-content: space-between;
-  margin: 10%;
-  padding: 10%;
-}
-.contact .fab {
-  color: #d1d5e8;
-}
-.contact .fas {
+
+.footer_icons {
   color: #d1d5e8;
 }
 
@@ -185,25 +177,4 @@ body {
     margin-left: 15vh;
     margin-top: 28vh;
   }
-}
-.navigation-mobile {
-  display: flex;
-  justify-content: center;
-  background-color: #131628;
-  color: #fafafa;
-}
-
-.button {
-  display: inline-block;
-  border: none;
-  padding: 1rem 2rem;
-  margin: 0;
-  text-decoration: none;
-  background-color: #fd4370;
-  color: #fafafa;
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-  border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }

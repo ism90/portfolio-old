@@ -83,18 +83,15 @@
 
   .about__profile {
     color: $color-primary-light;
-    font-size: .8rem;
+    font-size: 0.8rem;
     margin-top: 5%;
     margin-bottom: 5%;
-
   }
-
 
   .fab {
     color: $color-primary-light;
     margin-top: 5%;
     padding-right: 5%;
-
   }
   .profile-picture img {
     display: flex;
@@ -114,12 +111,71 @@
 .contact {
   height: 90vh;
   margin: 15%;
+  display: flex;
+  flex-direction: column;
 
   .contact__heading {
     margin-top: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5%;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form__input {
+    margin-top: 5%;
+    width: 300px;
+    height: 50px;
+  }
+
+  .form__textarea {
+    margin-top: 5%;
+    width: 300px;
+    height: 150px;
+  }
+
+  .message-splash {
+    display: none;
+  }
+
+  .counter {
+    color: $color-white;
+    margin-top: 2%;
+  }
+  .button__form {
+    margin-top: 15%;
+  }
+
+  .social-icons {
+    display: inline-flex;
+    justify-content: space-between;
+    margin: 10%;
+    padding: 10%;
+    
+  }
+
+  .fab {
+    color: $color-primary-light
+  }
+
+  .fas {
+    color: $color-primary-light
   }
 }
 
+
+  .copyright {
+    color: $color-primary-light;
+    opacity: 50%;
+    margin: auto;
+    text-align: center;
+  }
 // ------------------------------------- Tablet ------------------------------------
 @media screen and (min-width: $breakpoint-tablet) {
   .hero-splash {

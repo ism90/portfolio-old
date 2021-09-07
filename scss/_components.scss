@@ -1,1 +1,24 @@
 // Components: anything reusable such as buttons, navbars, cards etc.
+@use "./base" as *;
+
+.navigation-mobile {
+  display: flex;
+  justify-content: center;
+  background-color: $color-primary;
+  color: $color-white;
+}
+
+.button {
+  display: inline-block;
+  border: none;
+  padding: 1rem 2rem;
+  margin: 0;
+  text-decoration: none;
+  background-color: $color-secondary;
+  color: $color-white;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}

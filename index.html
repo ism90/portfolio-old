@@ -11,80 +11,94 @@
   <body>
     <!-- Header & Nav Bar -->
     <header class="header">
-      <nav class="navigation">
-        <a href="" class="navigation__logo">Ian Mason</a>
-        <a href="" class="navigation__projects">Projects</a>
-        <a href="" class="navigation__about">About</a>
-        <a href="" class="navigation__contact">Contact</a>
+    </header>
+      <!-- On Mobile -->
+
+      <nav class="navigation-mobile">
+        <a href="" class="navigation-mobile__logo"><img src="./assets/Logo.png"></a>
+      </nav>
+
+      <!-- On Desktop -->
+
+      <nav class="navigation-desktop">
+        <a href="" class="navigation-desktop__logo">Ian Mason</a>
+        <a href="" class="navigation-desktop__projects">Projects</a>
+        <a href="" class="navigation-desktop__about">About</a>
+        <a href="" class="navigation-desktop__contact">Contact</a>
         <button type="button" onclick="">Resume</button>
         <a href=""><i class="fab fa-github-square"></i></a>
         <a href=""><i class="fab fa-linkedin"></i></a>
         <a href=""><i class="fas fa-envelope"></i></a>
       </nav>
 
-    </header>
+
 
     <main>
       <!-------------------------------- Hero Section -------------------------------------------->
       <section class="hero">
 
-        <h1 class="">Hello. I'm Ian. A Web Developer.</h1>
-        <div class="button">
-          <button class="button__projects" type="button" onclick="">My Projects</button>
-        </div>
+        <h1 class="hero-splash">Hello. I'm <span class="hero-splash__pink">Ian</span>.<br> A Web Developer.</h1>
+        <button class="button button__projects" type="button" onclick="">My Projects</button>
+
       </section>
 
 
 
       <!-------------------------------- Projects Section -------------------------------------------->
-      <section class="projects"></section>
-        <h2>Projects</h2>
+
+      <section class="projects">
+        <h2 class="section-heading projects__heading">Projects</h2>
+        <div class="projects__heading__line"></div>
 
           <div class="carousel-wrapper">
 
           </div>
-
+        </section>
 
 
       <!-------------------------------- About Section -------------------------------------------->
-      <section class="about"></section>
-        <h2>About</h2>
-        <h3>Profile</h3>
+      <section class="about">
+        <h2 class="section-heading about__heading">About</h2>
+        <div class="about__heading__line"></div>
+        <h3 class="about__heading-small">Profile</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora modi porro illum veniam nisi. Voluptatem, nihil ipsam explicabo minus et cum fugiat, placeat officiis laudantium nesciunt corporis harum, velit neque? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque neque numquam doloribus sequi nesciunt laborum quas, pariatur placeat ipsam fuga obcaecati reiciendis, id quibusdam eaque? Ipsam magni pariatur alias dolores.</p>
-        <h4>Languages</h4>
+        <h3 class="about__heading-small">Languages</h3>
         <div class="languages-wrapper">
           <i class="fab fa-html5"></i>
           <i class="fab fa-css3-alt"></i>
           <i class="fab fa-js"></i>
 
         </div>
-        <div class="button">
-          <button class="button__contact" type="button" onclick="">Get in Touch</button>
+
+          <button class="button button__contact" type="button" onclick="">Get in Touch</button>
+
+
+        <div class="profile-picture">
+          <img src="./assets/profile.png" alt="A picture of me">
         </div>
 
-
-
-
+      </section>
 
 
       <!-------------------------------- Contact Section -------------------------------------------->
-      <section class="contact"></section>
-        <h2>Contact</h2>
+      <section class="contact">
+        <h2 class="section-heading contact__heading">Contact</h2>
+        <div class="contact__heading__line"></div>
         <form action="" class="form">
           <input type="text" name="name" class="form__input" placeholder="Name" />
           <input type="email" class="form__input" placeholder="Email" />
           <textarea name="the-textarea" id="the-textarea" maxlength="200" placeholder="Message"autofocus></textarea>
-          <button class="button__form" type="button" onclick="">Send Message</button>
+          <button class="button button__form" type="button" onclick="">Send Message</button>
         </form>
 
         <h2>I'd love to hear from you.</h2>
     <!-- Character Counter -->
     <div class="counter">
       <span class="counter__current">0</span>
-      <span class="counter__maximum">/ 200</span>
+      <span class="counter__maximum">/200</span>
     </div>
-  </div>
-
+  
+  </section>
     </main>
 
 
@@ -93,6 +107,7 @@
     <footer>
       <p class="copyright">Ian Mason &copy; <span id="year"></span></p>
     </footer>
+  </div>
     <script src="index.js"></script>
   </body>
 </html>

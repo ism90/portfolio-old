@@ -1,9 +1,126 @@
 // Layout: contains all the CSS that handles the layout, such as the container and any grid systems.
 
-.hero {
-  background-image: url(../assets/hero.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 90vh;
-  width: auto;
+@use "./base" as *;
+
+// ------------------------------------- Mobile First ------------------------------------
+@media screen and (min-width: $breakpoint-mobile) {
+  // Nav Bar Layout
+  .navigation-desktop {
+    display: none;
+  }
+
+  .navigation-mobile {
+    height: 10vh;
+    position: sticky;
+    top: 0;
+  }
+
+  .navigation-mobile__logo {
+    margin: auto;
+  }
+
+  // Hero Splash Layout
+  .hero {
+    background-image: url(../assets/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    background-position: center;
+
+    .hero-splash {
+      margin: 10%;
+      text-align: left;
+      color: $color-white;
+      font-size: 4em;
+
+      &__pink {
+        color: $color-secondary;
+      }
+    }
+    .button__projects {
+      margin: 10%;
+      font-size: 2rem;
+    }
+  }
+
+  // Projects Layout
+  .projects {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .projects__heading {
+      margin-top: 15vh;
+    }
+
+    .projects__heading__line {
+      width: 100px;
+      height: 4px;
+      background-color: $color-secondary;
+    }
+  }
+
+  // About Layout
+  .about {
+    height: 100vh;
+
+
+
+    .about__heading {
+      margin-top: 15vh;
+    }
+
+    .about__heading__line {
+      width: 100px;
+      height: 4px;
+      background-color: $color-secondary;
+    }
+
+  }
+
+  // Contact Layout
+  .contact {
+    height: 100vh;
+
+
+    .contact__heading {
+      margin-top: 15vh;
+    }
+
+    .about__heading__line {
+      width: 100px;
+      height: 4px;
+      background-color: $color-secondary;
+    }
+  }
+}
+
+// ------------------------------------- Tablet ------------------------------------
+@media screen and (min-width: $breakpoint-tablet) {
+  .hero-splash {
+  }
+}
+
+// ------------------------------------- Desktop ------------------------------------
+
+@media screen and (min-width: $breakpoint-desktop) {
+  .navigation-mobile {
+    display: none;
+  }
+
+  .navigation-desktop {
+    display: flex;
+    height: 10vh;
+  }
+
+  .hero-splash {
+    font-size: 8em;
+
+    margin-left: 15vh;
+    margin-top: 28vh;
+  }
 }

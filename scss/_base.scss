@@ -7,6 +7,17 @@
 
 $font-body: "Poppins", sans-serif;
 
+$color-primary: #131628;
+$color-primary-light: #d1d5e8;
+$color-secondary: #fd4370;
+$color-white: #fafafa;
+
+// Media Queries
+
+$breakpoint-mobile: 425px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+
 //Styles
 
 * {
@@ -18,4 +29,14 @@ $font-body: "Poppins", sans-serif;
 
 a {
   text-decoration: none;
+}
+
+body {
+  background: linear-gradient(#292b3e, #131628);
+}
+
+.section-heading {
+  color: $color-white;
+  font-size: 2rem;
+
 }

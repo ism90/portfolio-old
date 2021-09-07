@@ -1,0 +1,24 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "sass": "^1.39.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:scss": "sass scss/main.scss scss/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ism90/portfolio.git"
+  },
+  "author": "Ian Mason",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ism90/portfolio/issues"
+  },
+  "homepage": "https://github.com/ism90/portfolio#readme"
+}

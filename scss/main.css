@@ -10,6 +10,7 @@ a {
   text-decoration: none;
 }
 
+
 body {
   background: linear-gradient(#292b3e, #131628);
 }
@@ -197,6 +198,7 @@ body {
     margin-top: 28vh;
   }
 }
+
 .navigation-mobile {
   display: flex;
   justify-content: center;
@@ -218,3 +220,4 @@ body {
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+

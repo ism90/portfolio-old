@@ -9,7 +9,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch:scss": "sass scss/main.scss main.css"
+    "watch:scss": "sass scss/main.scss scss/main.css"
   },
   "repository": {
     "type": "git",

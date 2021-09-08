@@ -53,7 +53,7 @@
 
   // --------------------------------------- Projects Layout --------------------------------------------------
   .projects {
-    height: 100vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -66,7 +66,7 @@
 
   // -------------------------------------------- About Layout ---------------------------------------------------------------
   .about {
-    height: 100vh;
+    height: 90vh;
     margin: 10%;
     display: flex;
     flex-direction: column;
@@ -202,13 +202,11 @@
     align-items: center;
 
     .navigation-desktop__logo img {
-      width: 85%;
       margin-left: 3vw;
     }
 
     .navigation-desktop__social {
       margin-right: 3vw;
-
     }
 
     .fab {
@@ -225,35 +223,83 @@
       padding: 0.7rem;
       color: $color-primary-light;
       font-weight: 600;
-
-
     }
 
     .button--resume {
-      padding: 0.5rem 0.5rem; 
+      padding: 0.5rem 0.5rem;
       font-size: 1rem;
+    }
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    background-position: center;
+
+    .hero-splash {
+      margin-top: 12rem;
+      margin-bottom: 1em;
+      text-align: left;
+      color: $color-white;
+      font-size: 3em;
+
+      &__pink {
+        color: $color-secondary;
+      }
+    }
+
+    .button--projects {
+      font-size: 1rem;
+      margin: 0 32rem 0rem 4.7rem;
+    }
+  }
+
+
+  .about {
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 3fr 0.5fr;
+
+    .about__heading {
+      display: flex;
+      margin-top: 0;
+      grid-column: 1 / 3;
+      grid-row: 1;
+      justify-content: center;
+    }
+
+    .about-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      grid-column: 1;
+      grid-row: 2 / 3;
+
+        .about__profile {
+          font-size: 1rem;
+        }
+    }
+
+    .button--contact {
+
+      grid-row: 3 / 4;
+      display: flex;
+      margin: 0 auto auto 0;
 
 
     }
 
-    //   <nav class="navigation-desktop">
-    //   <div class="navigation-desktop__logo">
-    //     <a href="" class="navigation-desktop__logo"><img src="./assets/Logo.png"></a>
-    //   </div>
-    //   <div class="navigation-desktop__pages">
-    //     <a href="" class="navigation-desktop__pages__projects">Projects</a>
-    //     <a href="" class="navigation-desktop__pages__about">About</a>
-    //     <a href="" class="navigation-desktop__pages__contact">Contact</a>
-    //     <button type="button" onclick="">Resume</button>
-    //   </div>
-    //   <div class="navigation-dekstop__social">
-    //     <a href=""><i class="fab fa-github-square"></i></a>
-    //     <a href=""><i class="fab fa-linkedin"></i></a>
-    //     <a href=""><i class="fas fa-envelope"></i></a>
-    //   </div>
-    // </nav>
-  }
-  .hero-splash {
+    .profile-picture {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+      margin-left: 0;
+      margin: auto;
+    }
   }
 }
 

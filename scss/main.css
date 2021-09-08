@@ -70,7 +70,7 @@ body {
   }
 
   .projects {
-    height: 100vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -81,7 +81,7 @@ body {
   }
 
   .about {
-    height: 100vh;
+    height: 90vh;
     margin: 10%;
     display: flex;
     flex-direction: column;
@@ -201,7 +201,6 @@ body {
     align-items: center;
   }
   .navigation-desktop .navigation-desktop__logo img {
-    width: 85%;
     margin-left: 3vw;
   }
   .navigation-desktop .navigation-desktop__social {
@@ -223,6 +222,65 @@ body {
   .navigation-desktop .button--resume {
     padding: 0.5rem 0.5rem;
     font-size: 1rem;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    background-position: center;
+  }
+  .hero .hero-splash {
+    margin-top: 12rem;
+    margin-bottom: 1em;
+    text-align: left;
+    color: #fafafa;
+    font-size: 3em;
+  }
+  .hero .hero-splash__pink {
+    color: #fd4370;
+  }
+  .hero .button--projects {
+    font-size: 1rem;
+    margin: 0 32rem 0rem 4.7rem;
+  }
+
+  .about {
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 3fr 0.5fr;
+  }
+  .about .about__heading {
+    display: flex;
+    margin-top: 0;
+    grid-column: 1/3;
+    grid-row: 1;
+    justify-content: center;
+  }
+  .about .about-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-column: 1;
+    grid-row: 2/3;
+  }
+  .about .about-wrapper .about__profile {
+    font-size: 1rem;
+  }
+  .about .button--contact {
+    grid-row: 3/4;
+    display: flex;
+    margin: 0 auto auto 0;
+  }
+  .about .profile-picture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin-left: 0;
+    margin: auto;
   }
 }
 @media screen and (min-width: 1024px) {

@@ -36,7 +36,7 @@
     background-position: center;
 
     .hero-splash {
-      margin: 10%;
+      margin: 10vw;
       text-align: left;
       color: $color-white;
       font-size: 4em;
@@ -46,7 +46,7 @@
       }
     }
     .button--projects {
-      margin: 10%;
+      margin: 10vw;
       font-size: 2rem;
     }
   }
@@ -57,7 +57,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 10%;
+    margin: 10vw;
 
     .projects__heading {
       margin-top: 15%;
@@ -67,7 +67,7 @@
   // -------------------------------------------- About Layout ---------------------------------------------------------------
   .about {
     height: 90vh;
-    margin: 10%;
+    margin: 10vw;
     display: flex;
     flex-direction: column;
 
@@ -114,7 +114,7 @@
   // --------------------------------------------- Contact Layout ----------------------------------------------------------
   .contact {
     height: 100vh;
-    margin: 15%;
+    margin: 10vw;
     display: flex;
     flex-direction: column;
 
@@ -257,7 +257,7 @@
 
 
   .about {
-    height: 90vh;
+
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.5fr 3fr 0.5fr;
@@ -301,6 +301,58 @@
       margin: auto;
     }
   }
+
+
+
+
+
+  .contact {
+
+    display: grid;
+    grid-template-columns: 2fr 1.5fr;
+    grid-template-rows: 0.5fr 1.25fr 0.5fr;
+
+    .social-icons {
+      display: none
+    }
+
+    .contact__heading {
+      display: flex;
+      margin-top: 0;
+      grid-column: 1 / 3;
+      grid-row: 1;
+      justify-content: center;
+    }
+
+
+    .form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: stretch;
+    }
+
+    .button--form {
+
+      grid-row: 3 / 4;
+      display: flex;
+      margin: 0 auto auto 0;
+    }
+
+    .message-splash {
+      display: flex;
+      font-size: 2em;
+      align-items: center;
+      grid-column: 2 / 3;
+      color: $color-white
+    }
+
+    .form__textarea {
+      height: 250px;
+
+  }
+  }
+
 }
 
 // ------------------------------------- Desktop ------------------------------------

@@ -21,14 +21,20 @@
       <!-- On Desktop -->
 
       <nav class="navigation-desktop">
-        <a href="" class="navigation-desktop__logo">Ian Mason</a>
-        <a href="" class="navigation-desktop__projects">Projects</a>
-        <a href="" class="navigation-desktop__about">About</a>
-        <a href="" class="navigation-desktop__contact">Contact</a>
-        <button type="button" onclick="">Resume</button>
-        <a href=""><i class="fab fa-github-square"></i></a>
-        <a href=""><i class="fab fa-linkedin"></i></a>
-        <a href=""><i class="fas fa-envelope"></i></a>
+        <div class="navigation-desktop__logo">
+          <a href="" class="navigation-desktop__logo"><img src="./assets/Logo.png"></a>
+        </div>
+        <div class="navigation-desktop__pages">
+          <a href="" class="navigation-desktop__pages__projects">Projects</a>
+          <a href="" class="navigation-desktop__pages__about">About</a>
+          <a href="" class="navigation-desktop__pages__contact">Contact</a>
+          <button class = "button button--resume" type="button" onclick="">Resume</button>
+        </div>
+        <div class="navigation-desktop__social">
+          <a href=""><i class="fab fa-github-square fa-2x"></i></a>
+          <a href=""><i class="fab fa-linkedin fa-2x"></i></a>
+          <a href=""><i class="fas fa-envelope fa-2x"></i></a>
+        </div>
       </nav>
 
 
@@ -38,7 +44,7 @@
       <section class="hero">
 
         <h1 class="hero-splash">Hello. I'm <span class="hero-splash__pink">Ian</span>.<br> A Web Developer.</h1>
-        <button class="button button__projects" type="button" onclick="">My Projects</button>
+        <button class="button button--projects" type="button" onclick="">My Projects</button>
 
       </section>
 
@@ -73,7 +79,7 @@
 
         </div>
 
-          <button class="button button__contact" type="button" onclick="">Get in Touch</button>
+          <button class="button button--contact" type="button" onclick="">Get in Touch</button>
 
       </section>
 
@@ -91,7 +97,7 @@
             <span class="counter__current">0</span>
             <span class="counter__maximum">/200</span>
             </div>
-          <button class="button button__form" type="button" onclick="">Send Message</button>
+          <button class="button button--form" type="button" onclick="">Send Message</button>
         </form>
 
         <h2 class=message-splash>I'd love to hear from you.</h2>

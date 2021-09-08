@@ -64,7 +64,7 @@ body {
   .hero .hero-splash__pink {
     color: #fd4370;
   }
-  .hero .button__projects {
+  .hero .button--projects {
     margin: 10%;
     font-size: 2rem;
   }
@@ -117,7 +117,7 @@ body {
     margin: auto;
     margin-top: 3vh;
   }
-  .about .button__contact {
+  .about .button--contact {
     display: none;
   }
 
@@ -162,7 +162,7 @@ body {
     color: #fafafa;
     margin-top: 2%;
   }
-  .contact .button__form {
+  .contact .button--form {
     margin-top: 15%;
   }
   .contact .social-icons {
@@ -197,6 +197,32 @@ body {
     height: 10vh;
     position: sticky;
     top: 0;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navigation-desktop .navigation-desktop__logo img {
+    width: 85%;
+    margin-left: 3vw;
+  }
+  .navigation-desktop .navigation-desktop__social {
+    margin-right: 3vw;
+  }
+  .navigation-desktop .fab {
+    margin-left: 8px;
+    color: #d1d5e8;
+  }
+  .navigation-desktop .fas {
+    margin-left: 8px;
+    color: #d1d5e8;
+  }
+  .navigation-desktop .navigation-desktop__pages a {
+    padding: 0.7rem;
+    color: #d1d5e8;
+    font-weight: 600;
+  }
+  .navigation-desktop .button--resume {
+    padding: 0.5rem 0.5rem;
+    font-size: 1rem;
   }
 }
 @media screen and (min-width: 1024px) {

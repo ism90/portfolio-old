@@ -45,7 +45,7 @@
         color: $color-secondary;
       }
     }
-    .button__projects {
+    .button--projects {
       margin: 10%;
       font-size: 2rem;
     }
@@ -106,7 +106,7 @@
       margin-top: 3vh;
     }
 
-    .button__contact {
+    .button--contact {
       display: none;
     }
   }
@@ -158,7 +158,7 @@
       color: $color-white;
       margin-top: 2%;
     }
-    .button__form {
+    .button--form {
       margin-top: 15%;
     }
 
@@ -198,8 +198,61 @@
     height: 10vh;
     position: sticky;
     top: 0;
-  }
+    justify-content: space-between;
+    align-items: center;
 
+    .navigation-desktop__logo img {
+      width: 85%;
+      margin-left: 3vw;
+    }
+
+    .navigation-desktop__social {
+      margin-right: 3vw;
+
+    }
+
+    .fab {
+      margin-left: 8px;
+      color: $color-primary-light;
+    }
+
+    .fas {
+      margin-left: 8px;
+      color: $color-primary-light;
+    }
+
+    .navigation-desktop__pages a {
+      padding: 0.7rem;
+      color: $color-primary-light;
+      font-weight: 600;
+
+
+    }
+
+    .button--resume {
+      padding: 0.5rem 0.5rem; 
+      font-size: 1rem;
+
+
+    }
+
+    //   <nav class="navigation-desktop">
+    //   <div class="navigation-desktop__logo">
+    //     <a href="" class="navigation-desktop__logo"><img src="./assets/Logo.png"></a>
+    //   </div>
+    //   <div class="navigation-desktop__pages">
+    //     <a href="" class="navigation-desktop__pages__projects">Projects</a>
+    //     <a href="" class="navigation-desktop__pages__about">About</a>
+    //     <a href="" class="navigation-desktop__pages__contact">Contact</a>
+    //     <button type="button" onclick="">Resume</button>
+    //   </div>
+    //   <div class="navigation-dekstop__social">
+    //     <a href=""><i class="fab fa-github-square"></i></a>
+    //     <a href=""><i class="fab fa-linkedin"></i></a>
+    //     <a href=""><i class="fas fa-envelope"></i></a>
+    //   </div>
+    // </nav>
+  }
   .hero-splash {
   }
 }

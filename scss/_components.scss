@@ -1,7 +1,6 @@
 // Components: anything reusable such as buttons, navbars, cards etc.
 @use "./base" as *;
 
-
 .button {
   display: inline-block;
   border: none;
@@ -15,5 +14,9 @@
   cursor: pointer;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition-duration: 0.4s;
 }
 
+.button:hover {
+  background-color: #1C1E32;
+}

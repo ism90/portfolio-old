@@ -26,7 +26,7 @@
 
   // ------------------------------------------------------------- Hero Layout ------------------------------
   .hero {
-    background-image: url(../assets/hero.jpg);
+    background-image: url(../assets/hero.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 90vh;
@@ -159,7 +159,7 @@
       margin-top: 2%;
     }
     .button--form {
-      margin-top: 15%;
+      margin: auto;
     }
 
     .social-icons {
@@ -203,7 +203,10 @@
 
     .navigation-desktop__logo img {
       margin-left: 3vw;
+
     }
+
+
 
     .navigation-desktop__social {
       margin-right: 3vw;
@@ -212,17 +215,32 @@
     .fab {
       margin-left: 8px;
       color: $color-primary-light;
+      transition: 0.4s
+    }
+
+    .fab:hover {
+      color: $color-white;
     }
 
     .fas {
       margin-left: 8px;
       color: $color-primary-light;
+      transition: 0.4s
+    }
+
+    .fas:hover {
+      color: $color-white;
     }
 
     .navigation-desktop__pages a {
       padding: 0.7rem;
       color: $color-primary-light;
       font-weight: 600;
+      transition: 0.4s;
+    }
+
+    a:hover {
+      color: $color-white;
     }
 
     .button--resume {
@@ -324,7 +342,7 @@
     .button--form {
       grid-row: 3 / 4;
       display: flex;
-      margin: 0 auto auto 0;
+      margin: 10px auto auto 0;
     }
 
     .message-splash {
@@ -336,19 +354,15 @@
     }
 
     .form__input {
-
       width: 80%;
       height: 50px;
-
     }
 
     .form__textarea {
-
       width: 80%;
       height: 100%;
-
+    }
   }
-}
 }
 
 // ------------------------------------- Desktop ------------------------------------
@@ -369,13 +383,12 @@
     }
   }
 
+  .contact {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
 
-.contact {
-  display: grid;
-  grid-template-columns: 2fr 2fr;
-
-  .message-splash {
-    font-size: 3em;
+    .message-splash {
+      font-size: 3em;
+    }
   }
-}
 }

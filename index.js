@@ -15,25 +15,5 @@ document.getElementById("year").innerHTML = year;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Character Counter
+

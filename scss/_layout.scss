@@ -255,9 +255,7 @@
     }
   }
 
-
   .about {
-
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.5fr 3fr 0.5fr;
@@ -277,18 +275,15 @@
       grid-column: 1;
       grid-row: 2 / 3;
 
-        .about__profile {
-          font-size: 1rem;
-        }
+      .about__profile {
+        font-size: 1rem;
+      }
     }
 
     .button--contact {
-
       grid-row: 3 / 4;
       display: flex;
       margin: 0 auto auto 0;
-
-
     }
 
     .profile-picture {
@@ -302,18 +297,13 @@
     }
   }
 
-
-
-
-
   .contact {
-
     display: grid;
     grid-template-columns: 2fr 1.5fr;
     grid-template-rows: 0.5fr 1.25fr 0.5fr;
 
     .social-icons {
-      display: none
+      display: none;
     }
 
     .contact__heading {
@@ -324,7 +314,6 @@
       justify-content: center;
     }
 
-
     .form {
       display: flex;
       flex-direction: column;
@@ -333,7 +322,6 @@
     }
 
     .button--form {
-
       grid-row: 3 / 4;
       display: flex;
       margin: 0 auto auto 0;
@@ -344,15 +332,23 @@
       font-size: 2em;
       align-items: center;
       grid-column: 2 / 3;
-      color: $color-white
+      color: $color-white;
+    }
+
+    .form__input {
+
+      width: 80%;
+      height: 50px;
+
     }
 
     .form__textarea {
-      height: 250px;
+
+      width: 80%;
+      height: 100%;
 
   }
-  }
-
+}
 }
 
 // ------------------------------------- Desktop ------------------------------------
@@ -362,10 +358,24 @@
     display: flex;
   }
 
-  .hero-splash {
-    font-size: 8em;
+  .hero {
+    .hero-splash {
+      font-size: 3.5rem;
+    }
 
-    margin-left: 15vh;
-    margin-top: 28vh;
+    .button--projects {
+      font-size: 1.5rem;
+      margin: 0 70vw 0rem 10vw;
+    }
   }
+
+
+.contact {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+
+  .message-splash {
+    font-size: 3em;
+  }
+}
 }

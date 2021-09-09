@@ -167,7 +167,7 @@ body {
   }
   .contact .social-icons {
     display: inline-flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin: 10%;
     padding: 10%;
   }

@@ -1,7 +1,6 @@
-# Portfolio Project (WIP!)
+# Portfolio Project (old)
 
-A first attempt at making a portfolio for my projects, to showcase what what I have been
-learning on the nology course.
+A first attempt at making a portfolio. Version 2 in progress.
 
 <br>
 
